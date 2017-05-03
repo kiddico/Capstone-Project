@@ -1,0 +1,74 @@
+/* Make syllabus page printer friendly */
+@media print {
+	.hide-for-print {
+		display: none !important;
+	}
+	#syllabus {
+		margin: 0px !important;
+		padding-top: 0px;
+		width: 100% !important;
+	}
+}
+
+/* Grey Background */
+body {
+	background-color: #e9ebee;
+}
+
+input.input-field {
+	margin: 0;
+}
+
+.syll {
+	margin-top: 10px;
+}
+
+.nick-spacer{
+	width:5px;
+	height:1px;
+	display:inline-block;
+}
+
+.small-button {
+	padding-left:14px;
+	padding-right:14px;
+}
+
+.module {
+	background-color: #ffffff;
+	padding: 1.5em;
+	margin: 20px 0px 0px 0px;
+}
+
+.error-message {
+	margin-top: 15px;
+}
+
+/* TODO - better workaround? */
+.row {
+	margin-bottom: 0px;
+}
+
+#save {
+	display: none;
+}
+
+#section-header {
+	display: inline-block;
+}
+
+#section-input {
+	display: inline-block;
+	width: 300px;
+}
+
+#syllabus {
+	margin: 25px 0px 25px 0px;
+	text-align: left;
+	background-color: #ffffff;
+	padding: 1em 3em 3em 3em;
+}
+
+#section-save {
+	display: inline-block;
+}

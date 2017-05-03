@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="row center-align">
+	<div class="col s0 m3 l4 xl4"></div>
+	<div class="col s12 m6 l4 xl4">
+		<div class="module">
+			<h5>Search Results</h5>
+			<div>
+				{% if results|length < 1 %}
+				No results found<br>
+				{% endif %}
+
+				{% for items in results %}
+				<a href="/official?id={{items.oid}}">{{items.c_title}}<br></a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="col s0 m3 l4 xl4"></div>
+</div>
+
+{% endblock %}
