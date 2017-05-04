@@ -15,6 +15,8 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 """App Configuration"""
 
 
+# that's right, free 'secret' key.
+# don't have too much fun with it.
 class Auth:
     """Google Project Credentials"""
     CLIENT_ID = ('486646633132-nc0hlcn0vt7khirhmhkh518d84omqjea'
@@ -25,7 +27,6 @@ class Auth:
     TOKEN_URI = 'https://accounts.google.com/o/oauth2/token'
     USER_INFO = 'https://www.googleapis.com/userinfo/v2/me'
     SCOPE = ['profile', 'email']
-
 
 class Config:
     """Base config"""
